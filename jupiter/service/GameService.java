@@ -20,8 +20,8 @@ import java.util.*;
 
 @Service
 public class GameService {
-    private static final String TOKEN = "Bearer 2yslqyx9wxd5f60ru2xmnjq6asqpuw";
-    private static final String CLIENT_ID = "vtjaliocxbp005jlx8lnsun2g5amew";
+    private static final String TOKEN = "Bearer YOUR BEARER";
+    private static final String CLIENT_ID = "YOUR CLIENT ID";
     private static final String TOP_GAME_URL = "https://api.twitch.tv/helix/games/top?first=%s";
     private static final String GAME_SEARCH_URL_TEMPLATE = "https://api.twitch.tv/helix/games?name=%s";
     private static final int DEFAULT_GAME_LIMIT = 20;
