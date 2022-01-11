@@ -16,7 +16,7 @@ public class ApplicationConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        // make sure you add your own package name if your class is not under com.laioffer.jupiter.entity.db
+        
         sessionFactory.setPackagesToScan("com.laioffer.jupiter.entity.db");
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
@@ -24,9 +24,9 @@ public class ApplicationConfig {
 
     @Bean(name = "dataSource")
     public DataSource dataSource() {
-        String RDS_ENDPOINT = "laiproject-instance.cfw9inb2xzmn.us-east-1.rds.amazonaws.com";
-        String USERNAME = "admin";
-        String PASSWORD = "ZG123456f";
+        String RDS_ENDPOINT = "YOUR-AWS-ENDPOINT";
+        String USERNAME = "USERNAME";
+        String PASSWORD = "PASSWORD";
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
