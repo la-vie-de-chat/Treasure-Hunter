@@ -1,7 +1,9 @@
 # Treasure-Hunter
 
 ### Overview
-Treasure-Hunter is a personalized Twitch resources recommendation engine. Users can search and retrieve real-time Twitch resources using Twitch API and make their favorite collection. They can then get recommended based on trending games or their like history. To learn more details, please see the code/demo website.
+Treasure-Hunter is a personalized Twitch resources recommendation engine. Users can search and retrieve real-time Twitch resources using Twitch API and make their favorite collection. They can then get recommended based on trending games or their like history. To learn more details, please see the code/demo picture.
+
+![demo-picture](https://user-images.githubusercontent.com/70874534/149052234-285c2c27-dbfe-4ed8-bd35-862a68e2610c.jpeg)
 
 ### Tools and Technologies
 * <strong>Front-end: </strong>React.js, Ant Design
