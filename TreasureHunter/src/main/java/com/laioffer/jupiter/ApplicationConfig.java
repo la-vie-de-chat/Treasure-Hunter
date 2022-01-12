@@ -23,7 +23,7 @@ public class ApplicationConfig {
 
     @Bean(name = "dataSource")
     public DataSource dataSource() {
-        String RDS_ENDPOINT = "laiproject-instance.cfw9inb2xzmn.us-east-1.rds.amazonaws.com";
+        String RDS_ENDPOINT = "laiproject-instance.cfw9inb2xzmn.us-east-1.rds.amazonaws.com"; // ** YOUR OWN AWS RDS PROJECT ENDPOINT **
         String USERNAME = "admin";
         String PASSWORD = "ZG123456f";
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
