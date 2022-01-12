@@ -23,9 +23,9 @@ public class ApplicationConfig {
 
     @Bean(name = "dataSource")
     public DataSource dataSource() {
-        String RDS_ENDPOINT = "laiproject-instance.cfw9inb2xzmn.us-east-1.rds.amazonaws.com"; // ** YOUR OWN AWS RDS PROJECT ENDPOINT **
-        String USERNAME = "admin";
-        String PASSWORD = "ZG123456f";
+        String RDS_ENDPOINT = "laiproject-instance.cfw9inb2xzmn.us-east-1.rds.amazonaws.com"; // ** YOUR AWS RDS PROJECT IDENTIFICATION **
+        String USERNAME = "admin"; // ** YOUR AWS RDS USERNAME FOR THIS PROJECT **
+        String PASSWORD = "ZG123456f"; // ** YOUR AWS RDS PASSWORD FOR THIS PROJECT **
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://" + RDS_ENDPOINT + ":3306/twitch?createDatabaseIfNotExist=true&serverTimezone=UTC");
